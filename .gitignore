@@ -1,39 +1,10 @@
-# macOS
-.DS_Store
+# Ignore everything by default.
+*
 
-# Python cache/build artifacts
-__pycache__/
-*.py[cod]
-*$py.class
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-build/
-dist/
-*.egg-info/
+# Keep repository metadata rules editable.
+!/.gitignore
 
-# Virtual environments
-.venv/
-venv/
-env/
-
-# Raw capture files and temporary Wireshark outputs
-*.pcap
-*.pcapng
-*.wcap
-*.cap
-test.pcap
-fixed_capture.pcap
-
-# Experiment data and generated analysis results
-data/
-!data/.gitkeep
-*_result/
-bfi_motion_png/
-bfi_motion_png_only/
-
-# Logs and local scratch files
-*.log
-*.tmp
-*.bak
+# Track only Python and Markdown files in the repository root.
+!/*.py
+!/*.md
 
